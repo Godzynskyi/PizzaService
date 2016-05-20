@@ -103,13 +103,18 @@
         
   </dependencies>
   
-<!--   <build> -->
-<!--   	<plugins> -->
-<!--   		<plugin> -->
-<!--   			<groupId>org.apache.tomcat.maven</groupId> -->
-<!--   			<artifactId>tomcat7-maven-plugin</artifactId> -->
-<!--   			<version>2.2</version> -->
-<!--   		</plugin> -->
-<!--   	</plugins> -->
-<!--   </build> -->
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.tomcat.maven</groupId>
+  			<artifactId>tomcat7-maven-plugin</artifactId>
+  			<version>2.2</version>
+  			<configuration>
+  				<server>myserver</server>
+  				<path>/</path>
+  				<url>http://localhost:80/</url>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
 </project>
