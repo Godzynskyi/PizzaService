@@ -17,6 +17,8 @@
         >
     
     <context:component-scan base-package="org.pizza.service.pizza_service" />
+
+    <bean class="org.pizza.service.pizza_service.domain.Order" scope="prototype"></bean>
      
     <jdbc:embedded-database id="dataSource" type="H2" />
 
